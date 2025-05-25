@@ -3,8 +3,7 @@ import glob
 # Initialize total sum
 total_sum = 0
 
-# Read all output files and sum the numbers
-for filename in glob.glob("output_*.txt"):  # Modify this pattern if filenames differ
+for filename in glob.glob("output_*.txt"): 
     with open(filename, "r") as f:
         try:
             total_sum += int(f.read().strip())
